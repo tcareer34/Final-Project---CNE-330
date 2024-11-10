@@ -23,12 +23,12 @@ while player == False:
         if computer == "Scissors":
             print("You Win!", player, "smashes", computer)
         else:
-            print("You win!", player, "covers", computer)
+            print("You lost!", computer, "covers", player)
     elif player == "Scissors":
         if computer == "Stone":
             print("You lose...", computer, "smashes", player)
         else:
-            print("You win!", player, "gets cut by", computer)
+            print("You win!", player, "cuts", computer)
     else:
         print("That's not a valid play. Check your spelling!")
     #player was set to True, but I want it to be False so the loop continues
@@ -56,14 +56,14 @@ while player == False:
             print("You win!", player, "smashes", computer)
     elif player == "Paper":
         if computer == "Scissors":
-            print("You lose!", computer, "cut", player)
+            print("You lose!", computer, "cuts", player)
         else:
-            print("You win!", player, "covers", computer)
+            print("You win!", computer, "covers", player)
     elif player == "Scissors":
         if computer == "Stone":
             print("You lose...", computer, "smashes", player)
         else:
-            print("You win!", player, "gets cut by", computer)
+            print("You win!", player, "cuts", computer)
     else:
         print("That's not a valid play. Check your spelling!")
     #player was set to True, but I want it to be False so the loop continues
