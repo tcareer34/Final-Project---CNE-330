@@ -7,8 +7,7 @@ Step-by-Step Explanation of the Game Logic:
 
 The code requires Python. Pycharm IDE is recommended, but not required.
 
-Python 3
-PyCharm IDE
+Python 3 and recommended PyCharm IDE
 
 Importing the Necessary Function: First, I imported the randint function from the random module. This is how my computer opponent will randomly select its move.
 
