@@ -1,54 +1,77 @@
+# The following line imports the choice function from Python's random module, which is used to randomly select an item from a list.
 from random import randint
 
-# Create a list of play options
+# The following line creates a list of play options name tim
 tim = ["Stone", "Paper", "Scissors"]
 
-# Set player and computer scores to 0
+# The following line set player and computer scores to 0
 player_score = 0
 computer_score = 0
+# This next line tracks player win streak.
+win_streak = 0
 
-# Game loop
+# The following line starts an infinite loop until player enters stop.
 while True:
-    # Assign a random play to the computer
+    # The following line assign a random play to the computer
     computer = tim[randint(0, 2)]
 
-    # Get the player's move
+    # The following line asks the player for their move by typing their input choices given.
     player = input("What's your play? Type: Stone, Paper, or Scissors? ('stop' to quit game) ")
 
-    # Check if the player wants to quit
+    # The following line checks if the player wants to quit by typing stop.
+    # if so, the game loop breaks and ends the game.
     if player.lower() == 'stop':
         break
 
-    # Check the outcome of the game
+    # The following lines checks the outcome of each game.
     if player == computer:
         print("It's a tie!")
+        win_streak = 0 # This line resets win streak when there is a tie.
+
     elif player == "Stone":
         if computer == "Scissors":
             print("Nice choice, you win!", player, "smashes", computer)
             player_score += 1
+            win_streak += 1
         else:
             print("Sorry, you lose!", computer, "covers", player)
             computer_score += 1
+            win_streak = 0
+
     elif player == "Paper":
         if computer == "Stone":
             print("Good play, you win!", player, "covers", computer)
             player_score += 1
+            win_streak += 1
+
         else:
             print("Better luck next time, you lose!", computer, "cuts", player)
             computer_score += 1
+            win_streak = 0
+
     elif player == "Scissors":
         if computer == "Paper":
             print("Excellent play, you win!", player, "cuts", computer)
             player_score += 1
+            win_streak += 1
+
         else:
             print("You lose...", computer, "smashes", player)
             computer_score += 1
+            win_streak = 0
+
+    # The following line prints if the player enters an invalid play.
     else:
         print("That's not a valid play. Please check your spelling!")
 
-    # Display current scores
+    # This next line checks if player has won 3 in a row.
+    if win_streak == 3:
+        print("You're on fire!")
+        win_streak = 0  #Reset streak after message.
+
+    # The following line displays the current scores.
     print(f"Score - Player: {player_score}, Computer: {computer_score}")
 
-# Final scores after the player quits
+# The following line displays the final scores after the player quits.
 print(f"Final Score - Player: {player_score}, Computer: {computer_score}")
 print("Thanks for playing! Come back soon!")
