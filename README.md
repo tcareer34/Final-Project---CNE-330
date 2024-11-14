@@ -37,8 +37,8 @@ The Paper, Stone, Scissors game is a classic hand game recreated in Python. The 
 8. **Restarting the Game:**
    - After each round, `player` resets to `False`, allowing the game to loop for additional rounds or exit as desired.
 
-## **Code Repository**
-The project’s code is available on [GitHub](https://github.com/tcareer34/Paper_Rock_Scissors_Game/blob/main/Final-Project.py).
+## **Code Repository Location**
+My project’s code is available on [GitHub](https://github.com/tcareer34/Final-Project---CNE-330).
 
 ## **Project Source and Inspiration**
 The concept of the game was adapted from Career Karma's beginner Python projects guide.
