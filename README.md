@@ -1,37 +1,47 @@
-Tim Nguyen
-CNE 330
-Final Project: 
-Paper, Stone, Scissors Game 
+# Final Project: Paper, Stone, Scissors Game
 
-Step-by-Step Explanation of the Game Logic:
+### Tim Nguyen
+**Course:** CNE 330
 
-The code requires Python. Pycharm IDE is recommended, but not required.
+---
 
-Python 3 and recommended PyCharm IDE
+## **Game Overview:**
+The Paper, Stone, Scissors game is a classic hand game recreated in Python. The project includes game logic for determining winners, handling ties, tracking scores, and a fun win-streak feature.
 
-Importing the Necessary Function: First, I imported the randint function from the random module. This is how my computer opponent will randomly select its move.
+## **Game Logic Explained:**
 
-Defining the Play Options: I created a list called t that holds the three possible moves:  "Rock", "Paper", and "Scissors". These are the choices both I and the computer can make during the game.
+1. **Importing the Required Function:**
+   - The `randint` function from Python's `random` module allows the computer to randomly select its move.
 
-Setting Up the Players: Next, I set up the two players: the computer and myself. I assign a random move to the computer by using randint(0, 2) to select a number between 0 and 2.
+2. **Defining Play Options:**
+   - The list `a` includes the three possible moves—Stone, Paper, and Scissors—which both the player and computer choose from during the game.
 
-The reason for this range (0, 2) is that computers count starting from 0. So, the list t has:
+3. **Setting Up the Players:**
+   - The computer’s move is assigned using `randint(0, 2)`, where:
+     - "Stone" is at index 0
+     - "Paper" is at index 1
+     - "Scissors" is at index 2
 
-"Rock" at index 0,
-"Paper" at index 1,
-"Scissors" at index 2.
+4. **Waiting for Player's Move:**
+   - Initially, `player` is set to `False` to indicate the game is waiting for input. The computer won’t change its move after selection.
 
-Waiting for My Move: Unlike playing with friends in person, the computer makes its move first and waits for me to decide mine. The computer doesn’t cheat or change its move after making it. Initially, I set the player variable to False, meaning the game is waiting for me to make my move.
+5. **Game Loop and Player Move:**
+   - Inside the `while` loop, the `input()` function collects the player’s choice, and `player` changes to `True` after a move is entered.
 
-Making My Move and the Game Loop: Once the while loop starts, the computer waits for me to make my move. After I enter my choice, the value of the player variable changes from False to True. I use the input() function to capture my choice and assign it to the player variable.
+6. **Outcome Determination:**
+   - Using `if-elif-else` statements, the program compares the player’s choice with the computer’s to declare a win, loss, or tie.
 
-Determining the Outcome: I use nested if, elif, and else statements to check all possible outcomes:
+7. **Error Handling:**
+   - An `else` statement catches any invalid inputs, displaying an error if the input doesn’t match "Stone," "Paper," or "Scissors."
 
-Win, Lose, or Tie: Based on my choice and the computer’s move, the program prints a message indicating whether I win, the computer wins, or if it’s a tie.
+8. **Restarting the Game:**
+   - After each round, `player` resets to `False`, allowing the game to loop for additional rounds or exit as desired.
 
-Error Handling: I use else at the end to catch any invalid inputs. If I enter something other than "Rock", "Paper", or "Scissors", the program will print an error message.
+## **Code Repository**
+The project’s code is available on [GitHub](https://github.com/tcareer34/Paper_Rock_Scissors_Game/blob/main/Final-Project.py).
 
-Restarting the Game: After each round, I reset the player variable to False so the game can start over, allowing me to play again if I wish. The game continues in a loop until I decide to stop.
+## **Project Source and Inspiration**
+The concept of the game was adapted from Career Karma's beginner Python projects guide.
+For more details, refer to this [tutorial](https://thehelloworldprogram.com/python/python-game-rock-paper-scissors/).
+m a list.
 
-The location of my code is shared on GitHub: https://github.com/tcareer34/Paper_Rock_Scissors_Game/blob/main/Final-Project.py
-This code was cited from: https://careerkarma.com/blog/python-projects-beginners/
