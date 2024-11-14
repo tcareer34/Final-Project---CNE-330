@@ -1,71 +1,54 @@
 from random import randint
 
-#create a list of play options
-t = ["Paper", "Stone", "Scissors"]
+# Create a list of play options
+tim = ["Stone", "Paper", "Scissors"]
 
-#assign a random play to the computer
-computer = t[randint(0,2)]
+# Set player and computer scores to 0
+player_score = 0
+computer_score = 0
 
-#set player to False
-player = False
+# Game loop
+while True:
+    # Assign a random play to the computer
+    computer = tim[randint(0, 2)]
 
-while player == False:
-#set player to True
-    player = input("Paper, Stone, Scissors?")
+    # Get the player's move
+    player = input("What's your play? Type: Stone, Paper, or Scissors? ('stop' to quit game) ")
+
+    # Check if the player wants to quit
+    if player.lower() == 'stop':
+        break
+
+    # Check the outcome of the game
     if player == computer:
-        print("Push!")
-    elif player == "Paper":
-        if computer == "Stone":
-            print("You Win!", player, "covers", computer)
-        else:
-            print("You lost!", player, "gets cut by", computer)
+        print("It's a tie!")
     elif player == "Stone":
         if computer == "Scissors":
-            print("You Win!", player, "smashes", computer)
+            print("Nice choice, you win!", player, "smashes", computer)
+            player_score += 1
         else:
-            print("You lost!", computer, "covers", player)
-    elif player == "Scissors":
+            print("Sorry, you lose!", computer, "covers", player)
+            computer_score += 1
+    elif player == "Paper":
         if computer == "Stone":
-            print("You lose...", computer, "smashes", player)
+            print("Good play, you win!", player, "covers", computer)
+            player_score += 1
         else:
-            print("You win!", player, "cuts", computer)
-    else:
-        print("That's not a valid play. Check your spelling!")
-    #player was set to True, but I want it to be False so the loop continues
-    player = False
-    computer = t[randint(0,2)]
-
-#create a list of play options
-t = ["Stone", "Paper", "Scissors"]
-
-#assign a random play to the computer
-computer = t[randint(0,2)]
-
-#set player to False
-player = False
-
-while player == False:
-#set player to True
-    player = input("Stone, Paper, Scissors?")
-    if player == computer:
-        print("Tie!")
-    elif player == "Stone":
+            print("Better luck next time, you lose!", computer, "cuts", player)
+            computer_score += 1
+    elif player == "Scissors":
         if computer == "Paper":
-            print("You lose!", computer, "covers", player)
+            print("Excellent play, you win!", player, "cuts", computer)
+            player_score += 1
         else:
-            print("You win!", player, "smashes", computer)
-    elif player == "Paper":
-        if computer == "Scissors":
-            print("You lose!", computer, "cuts", player)
-        else:
-            print("You win!", computer, "covers", player)
-    elif player == "Scissors":
-        if computer == "Stone":
             print("You lose...", computer, "smashes", player)
-        else:
-            print("You win!", player, "cuts", computer)
+            computer_score += 1
     else:
-        print("That's not a valid play. Check your spelling!")
-    #player was set to True, but I want it to be False so the loop continues
-    player = False
-    computer = t[randint(0,2)]
+        print("That's not a valid play. Please check your spelling!")
+
+    # Display current scores
+    print(f"Score - Player: {player_score}, Computer: {computer_score}")
+
+# Final scores after the player quits
+print(f"Final Score - Player: {player_score}, Computer: {computer_score}")
+print("Thanks for playing! Come back soon!")
