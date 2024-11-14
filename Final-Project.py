@@ -32,11 +32,11 @@ while True:
         if computer == "Scissors":
             print("Nice choice, you win!", player, "smashes", computer)
             player_score += 1
-            win_streak += 1
+            win_streak += 1 # This line adds 1 to players winning streak total.
         else:
             print("Sorry, you lose!", computer, "covers", player)
             computer_score += 1
-            win_streak = 0
+            win_streak = 0  # This line resets win streak when player loses.
 
     elif player == "Paper":
         if computer == "Stone":
@@ -47,7 +47,7 @@ while True:
         else:
             print("Better luck next time, you lose!", computer, "cuts", player)
             computer_score += 1
-            win_streak = 0
+            win_streak = 0 # This line resets win streak when player loses.
 
     elif player == "Scissors":
         if computer == "Paper":
@@ -67,7 +67,7 @@ while True:
     # This next line checks if player has won 3 in a row.
     if win_streak == 3:
         print("You're on fire!")
-        win_streak = 0  #Reset streak after message.
+        win_streak = 0  # Reset streak counts after outputting message.
 
     # The following line displays the current scores.
     print(f"Score - Player: {player_score}, Computer: {computer_score}")
