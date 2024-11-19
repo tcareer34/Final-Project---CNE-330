@@ -48,8 +48,8 @@ while True:
         if computer == "Stone":
             print("Good play, you win!", player, "covers", computer)
             player_score += 1
-            winsound.Beep(500, 300)  # Frequency, duration in milliseconds
-            winsound.Beep(600, 400)  # Frequency, duration in milliseconds
+            winsound.Beep(500, 300) # Frequency, duration in milliseconds
+            winsound.Beep(600, 400)
             winsound.Beep(700, 500)
             win_streak += 1
 
@@ -65,7 +65,7 @@ while True:
             print("Excellent play, you win!", player, "cuts", computer)
             player_score += 1
             winsound.Beep(500, 300)  # Frequency, duration in milliseconds
-            winsound.Beep(600, 400)  # Frequency, duration in milliseconds
+            winsound.Beep(600, 400)
             winsound.Beep(700, 500)
             win_streak += 1
 
@@ -84,14 +84,9 @@ while True:
     if win_streak == 3:
         print("You're on fire!")
         winsound.Beep(400, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(500, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(600, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(700, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(900, 900)  # Frequency, duration in milliseconds
-        winsound.Beep(400, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(500, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(600, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(700, 500)  # Frequency, duration in milliseconds
+        winsound.Beep(500, 600)  # Frequency, duration in milliseconds
+        winsound.Beep(600, 700)  # Frequency, duration in milliseconds
+        winsound.Beep(700, 800)  # Frequency, duration in milliseconds
         winsound.Beep(900, 900)  # Frequency, duration in milliseconds
         win_streak = 0  # Reset streak counts after outputting message.
 
