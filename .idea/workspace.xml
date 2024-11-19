@@ -23,9 +23,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.Final-Project.executor": "Debug",
+    "Python.Final-Project.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "Game"
   }
 }]]></component>
   <component name="RunManager">
