@@ -1,9 +1,9 @@
 # The following line imports the choice function from Python's random module, which is used to randomly select an item from a list.
 from random import randint
-import winsound
+import winsound # added import sound from windows built in sound
 
 # The following line creates a list of play options name tim
-tim = ["Stone", "Paper", "Scissors"]
+tim = ["Stone", "Paper", "Scissors"] 
 
 # The following line set player and computer scores to 0
 player_score = 0
