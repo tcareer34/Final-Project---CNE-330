@@ -80,7 +80,7 @@ while True:
     else:
         print("That's not a valid play. Please check your spelling!")
 
-    # This next line checks if player has won 3 in a row.
+    # This next line checks if player has won 3 in a row and plays a victory tune.
     if win_streak == 3:
         print("You're on fire!")
         winsound.Beep(400, 500)  # Frequency, duration in milliseconds
