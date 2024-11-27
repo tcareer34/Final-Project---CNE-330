@@ -1,9 +1,9 @@
 # The following line imports the choice function from Python's random module, which is used to randomly select an item from a list.
 from random import randint
-import winsound # added import sound from windows built in sound
+import winsound
 
 # The following line creates a list of play options name tim
-tim = ["Stone", "Paper", "Scissors"] 
+tim = ["Stone", "Paper", "Scissors"]
 
 # The following line set player and computer scores to 0
 player_score = 0
@@ -48,8 +48,8 @@ while True:
         if computer == "Stone":
             print("Good play, you win!", player, "covers", computer)
             player_score += 1
-            winsound.Beep(500, 300)  # Frequency, duration in milliseconds
-            winsound.Beep(600, 400)  # Frequency, duration in milliseconds
+            winsound.Beep(500, 300) # Frequency, duration in milliseconds
+            winsound.Beep(600, 400)
             winsound.Beep(700, 500)
             win_streak += 1
 
@@ -65,7 +65,7 @@ while True:
             print("Excellent play, you win!", player, "cuts", computer)
             player_score += 1
             winsound.Beep(500, 300)  # Frequency, duration in milliseconds
-            winsound.Beep(600, 400)  # Frequency, duration in milliseconds
+            winsound.Beep(600, 400)
             winsound.Beep(700, 500)
             win_streak += 1
 
@@ -80,18 +80,13 @@ while True:
     else:
         print("That's not a valid play. Please check your spelling!")
 
-    # This next line checks if player has won 3 in a row and plays a victory tune.
+    # This next line checks if player has won 3 in a row.
     if win_streak == 3:
         print("You're on fire!")
         winsound.Beep(400, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(500, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(600, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(700, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(900, 900)  # Frequency, duration in milliseconds
-        winsound.Beep(400, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(500, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(600, 500)  # Frequency, duration in milliseconds
-        winsound.Beep(700, 500)  # Frequency, duration in milliseconds
+        winsound.Beep(500, 600)  # Frequency, duration in milliseconds
+        winsound.Beep(600, 700)  # Frequency, duration in milliseconds
+        winsound.Beep(700, 800)  # Frequency, duration in milliseconds
         winsound.Beep(900, 900)  # Frequency, duration in milliseconds
         win_streak = 0  # Reset streak counts after outputting message.
 
