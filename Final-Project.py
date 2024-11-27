@@ -36,6 +36,7 @@ while True:
             winsound.Beep(500, 300)  # Frequency, duration in milliseconds
             winsound.Beep(600, 400)  # Frequency, duration in milliseconds
             winsound.Beep(700, 500)
+            winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
             win_streak += 1 # This line adds 1 to players winning streak total.
         else:
             print("Sorry, you lose!", computer, "covers", player)
@@ -51,6 +52,7 @@ while True:
             winsound.Beep(500, 300) # Frequency, duration in milliseconds
             winsound.Beep(600, 400)
             winsound.Beep(700, 500)
+            winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
             win_streak += 1
 
         else:
@@ -67,6 +69,7 @@ while True:
             winsound.Beep(500, 300)  # Frequency, duration in milliseconds
             winsound.Beep(600, 400)
             winsound.Beep(700, 500)
+            winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
             win_streak += 1
 
         else:
@@ -87,7 +90,10 @@ while True:
         winsound.Beep(500, 600)  # Frequency, duration in milliseconds
         winsound.Beep(600, 700)  # Frequency, duration in milliseconds
         winsound.Beep(700, 800)  # Frequency, duration in milliseconds
-        winsound.Beep(900, 900)  # Frequency, duration in milliseconds
+        winsound.Beep(800, 900)  # Frequency, duration in milliseconds
+        winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
+        winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
+        winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
         win_streak = 0  # Reset streak counts after outputting message.
 
     # The following line displays the current scores.
