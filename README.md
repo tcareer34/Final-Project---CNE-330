@@ -1,4 +1,4 @@
-# Final Project: Paper, Stone, Scissors Game
+# Final Project:  Stone, Paper, Scissors Game
 
 ### Tim Nguyen
 **Course:** CNE 330
@@ -6,7 +6,7 @@
 ---
 
 ## **Game Overview:**
-The Paper, Stone, Scissors game is a classic hand game recreated in Python. The project includes game logic for determining winners, handling ties, tracking scores, and a fun win-streak feature.
+The Stone, Paper, Scissors game is a classic hand game recreated in Python. The project includes game logic for determining winners, handling ties, tracking scores, and a fun win-streak feature.
 
 ## **Game Logic Explained:**
 
