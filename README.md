@@ -43,6 +43,8 @@ The Stone, Paper, Scissors game is a classic hand game recreated in Python. The 
 
 ## **Code Repository Location**
 My project’s code is available on [GitHub](https://github.com/tcareer34/Final-Project---CNE-330).
+Please use Pycharm to open the Final-Project.py code.
+To view my presentation video, please download the video1531690495.mp4 and play it using your Window's Media Player.
 
 ## **Project Source and Inspiration**
 The concept of the game was adapted from Career Karma's beginner Python projects guide.
